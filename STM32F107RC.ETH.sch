@@ -9178,7 +9178,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R5" gate="G$1" x="-86.0425" y="165.1" rot="R90"/>
 <instance part="C4" gate="G$1" x="-86.0425" y="148.9075"/>
 <instance part="SUPPLY7" gate="G$1" x="-86.0425" y="178.7525"/>
-<instance part="X1" gate="G$1" x="-114.935" y="119.6975"/>
+<instance part="X1" gate="G$1" x="-114.935" y="66.04"/>
 <instance part="R6" gate="G$1" x="-66.3575" y="147.6375" rot="R180"/>
 <instance part="R7" gate="G$1" x="-20.32" y="106.3625" rot="R180"/>
 <instance part="R8" gate="G$1" x="3.81" y="114.6175" rot="R270"/>
@@ -9192,7 +9192,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="C6" gate="G$1" x="168.5925" y="117.7925"/>
 <instance part="JP2" gate="A" x="-53.6575" y="203.835" rot="R90"/>
 <instance part="C7" gate="G$1" x="-51.7525" y="196.215" rot="R270"/>
-<instance part="J1" gate="G$1" x="-197.485" y="164.7825" rot="R180"/>
+<instance part="J1" gate="G$1" x="-158.115" y="139.3825" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9315,8 +9315,8 @@ Source: 008-0260-0_E.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
-<wire x1="-99.695" y1="107.6325" x2="-99.695" y2="112.0775" width="0.1524" layer="91"/>
-<label x="-98.1075" y="107.6325" size="1.27" layer="95" rot="R90"/>
+<wire x1="-91.44" y1="58.42" x2="-99.695" y2="58.42" width="0.1524" layer="91"/>
+<label x="-92.3925" y="57.785" size="1.27" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -9447,7 +9447,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-86.0425" y1="176.2125" x2="-86.0425" y2="172.085" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="VCC"/>
 <wire x1="-86.0425" y1="172.085" x2="-86.0425" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="-99.695" y1="127.3175" x2="-99.695" y2="168.5925" width="0.1524" layer="91"/>
+<wire x1="-99.695" y1="73.66" x2="-99.695" y2="168.5925" width="0.1524" layer="91"/>
 <wire x1="-99.695" y1="168.5925" x2="-96.2025" y2="172.085" width="0.1524" layer="91"/>
 <wire x1="-96.2025" y1="172.085" x2="-86.0425" y2="172.085" width="0.1524" layer="91"/>
 </segment>
@@ -9476,13 +9476,15 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-74.6125" y1="147.6375" x2="-76.5175" y2="145.7325" width="0.1524" layer="91"/>
 <wire x1="-76.5175" y1="145.7325" x2="-76.5175" y2="123.825" width="0.1524" layer="91"/>
 <wire x1="-76.5175" y1="123.825" x2="-80.645" y2="119.6975" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="OUT"/>
-<wire x1="-80.645" y1="119.6975" x2="-99.695" y2="119.6975" width="0.1524" layer="91"/>
 <wire x1="-80.645" y1="119.6975" x2="-76.2" y2="115.2525" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="115.2525" x2="-36.83" y2="115.2525" width="0.1524" layer="91"/>
 <wire x1="-36.83" y1="115.2525" x2="-27.94" y2="106.3625" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="-27.94" y1="106.3625" x2="-25.4" y2="106.3625" width="0.1524" layer="91"/>
+<wire x1="-80.645" y1="119.6975" x2="-80.645" y2="67.945" width="0.1524" layer="91"/>
+<wire x1="-80.645" y1="67.945" x2="-82.55" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="OUT"/>
+<wire x1="-82.55" y1="66.04" x2="-99.695" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
