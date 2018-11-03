@@ -9197,6 +9197,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R16" library="resistor" deviceset="R-EU_" device="0204_7" value="1k"/>
 <part name="R17" library="resistor" deviceset="R-EU_" device="0204_7" value="1k"/>
 <part name="R18" library="resistor" deviceset="R-EU_" device="0204_7" value="1k"/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9242,6 +9243,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="R16" gate="G$1" x="-93.98" y="99.06" rot="MR270"/>
 <instance part="R17" gate="G$1" x="-91.44" y="94.615" rot="MR270"/>
 <instance part="R18" gate="G$1" x="-87.63" y="90.17" rot="MR270"/>
+<instance part="GND2" gate="1" x="7.62" y="126.365"/>
 </instances>
 <busses>
 </busses>
@@ -9467,6 +9469,13 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-104.14" y1="95.25" x2="-104.14" y2="93.0275" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VSS"/>
+<wire x1="-2.54" y1="132.08" x2="6.985" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="6.985" y1="132.08" x2="7.62" y2="131.445" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="7.62" y1="131.445" x2="7.62" y2="128.905" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -9557,11 +9566,12 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="-47.9425" y1="152.4" x2="-85.09" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="152.4" x2="-85.09" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-86.0425" y1="160.02" x2="-86.0425" y2="151.4475" width="0.1524" layer="91"/>
 <wire x1="-85.09" y1="152.4" x2="-86.0425" y2="151.4475" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="!NRST"/>
 </segment>
 </net>
 <net name="N$17" class="0">
