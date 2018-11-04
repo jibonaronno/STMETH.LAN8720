@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9170,6 +9170,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R17" library="resistor" deviceset="R-EU_" device="0204_7" value="1k"/>
 <part name="R18" library="resistor" deviceset="R-EU_" device="0204_7" value="1k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9216,6 +9217,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="R17" gate="G$1" x="-91.44" y="94.615" rot="MR270"/>
 <instance part="R18" gate="G$1" x="-87.63" y="90.17" rot="MR270"/>
 <instance part="GND2" gate="1" x="7.62" y="126.365"/>
+<instance part="GND3" gate="1" x="149.5425" y="37.465"/>
 </instances>
 <busses>
 </busses>
@@ -9448,6 +9450,25 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="7.62" y1="131.445" x2="7.62" y2="128.905" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U2" gate="A" pin="VSSA"/>
+<wire x1="137.16" y1="45.72" x2="141.605" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="141.605" y1="45.72" x2="141.605" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VSS_1"/>
+<wire x1="141.605" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VSS_2"/>
+<wire x1="137.16" y1="40.64" x2="141.605" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="141.605" y1="40.64" x2="141.605" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VSS_3"/>
+<wire x1="137.16" y1="38.1" x2="141.605" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="141.605" y1="38.1" x2="141.605" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VSS_4"/>
+<wire x1="137.16" y1="35.56" x2="141.605" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="141.605" y1="35.56" x2="141.605" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="141.605" y1="40.64" x2="149.5425" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="149.5425" y1="40.64" x2="149.5425" y2="40.005" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -9514,6 +9535,25 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="62.23" y1="141.2875" x2="53.975" y2="141.2875" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="1" pin="3"/>
 <wire x1="74.6125" y1="141.9225" x2="77.7875" y2="141.9225" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VBAT"/>
+<wire x1="137.16" y1="137.16" x2="140.6525" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="137.16" x2="140.6525" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDDA"/>
+<wire x1="140.6525" y1="134.62" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDD_1"/>
+<wire x1="137.16" y1="132.08" x2="140.6525" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="132.08" x2="140.6525" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDD_2"/>
+<wire x1="137.16" y1="129.54" x2="140.6525" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="129.54" x2="140.6525" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDD_3"/>
+<wire x1="137.16" y1="127" x2="140.6525" y2="127" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="127" x2="140.6525" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDD_4"/>
+<wire x1="137.16" y1="124.46" x2="140.6525" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="124.46" x2="140.6525" y2="127" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="137.16" x2="140.6525" y2="146.3675" width="0.1524" layer="91"/>
+<wire x1="140.6525" y1="146.3675" x2="77.7875" y2="146.3675" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
