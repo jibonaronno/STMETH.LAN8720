@@ -3259,8 +3259,8 @@ chip</description>
 <wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
 <wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.55875" y="0" dx="1.651" dy="1.905" layer="1"/>
-<smd name="2" x="1.55875" y="0" dx="1.651" dy="1.905" layer="1" roundness="20"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <text x="-1.27" y="1.143" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
@@ -9456,6 +9456,7 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796"/>
+<text x="2.54" y="1.27" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="MOLEX-1X6-RA">
 <wire x1="-1.27" y1="0.635" x2="-1.27" y2="3.175" width="0.127" layer="21"/>
