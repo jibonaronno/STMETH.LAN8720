@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12784,6 +12784,52 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="omron-G5NB-1A-E">
+<packages>
+<package name="OMRON-G5NB">
+<wire x1="0" y1="0" x2="0" y2="7" width="0.127" layer="21"/>
+<wire x1="0" y1="7" x2="20.75" y2="7" width="0.127" layer="21"/>
+<wire x1="20.75" y1="7" x2="20.75" y2="0" width="0.127" layer="21"/>
+<wire x1="20.75" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="C1" x="1.05" y="5.85" drill="0.6" diameter="1.6764"/>
+<pad name="C2" x="1.05" y="1.15" drill="0.6" diameter="1.6764"/>
+<pad name="A" x="12.55" y="5.85" drill="0.6" diameter="1.6764"/>
+<pad name="B" x="19.7" y="5.85" drill="0.6" diameter="1.6764"/>
+</package>
+</packages>
+<symbols>
+<symbol name="G5NB-1A-E">
+<wire x1="0" y1="0" x2="0" y2="7" width="0.254" layer="94"/>
+<wire x1="0" y1="7" x2="20.5" y2="7" width="0.254" layer="94"/>
+<wire x1="20.5" y1="7" x2="20.5" y2="0" width="0.254" layer="94"/>
+<wire x1="20.5" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="C1" x="-3.5" y="5.5" length="middle"/>
+<pin name="C2" x="-3.5" y="1.5" length="middle"/>
+<pin name="A" x="13.5" y="9.5" length="middle" rot="R270"/>
+<pin name="B" x="16.5" y="9.5" length="middle" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OMRON-RELAY-G5NB">
+<gates>
+<gate name="G$1" symbol="G5NB-1A-E" x="-10.16" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="OMRON-G5NB">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C1" pad="C1"/>
+<connect gate="G$1" pin="C2" pad="C2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12859,6 +12905,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="LED5" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="X3" library="con-phoenix-508" deviceset="MSTBA6" device=""/>
+<part name="U$1" library="omron-G5NB-1A-E" deviceset="OMRON-RELAY-G5NB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12940,6 +12987,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="X3" gate="-4" x="260.6675" y="-29.5275" rot="R180"/>
 <instance part="X3" gate="-5" x="260.6675" y="-24.4475" rot="R180"/>
 <instance part="X3" gate="-6" x="260.6675" y="-19.3675" rot="R180"/>
+<instance part="U$1" gate="G$1" x="203.2" y="91.44"/>
 </instances>
 <busses>
 </busses>
