@@ -2315,11 +2315,11 @@ design rules under a new name.</description>
 <element name="C11" library="resistor" package="C1206" value="105" x="69.85" y="21.034375" rot="R180">
 <attribute name="SPICEPREFIX" value="C" x="69.85" y="21.034375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="X2" library="con-phoenix-508" package="MSTBA6" value="MSTBA6" x="22.5400875" y="53.03164375" rot="MR90">
-<attribute name="OC_NEWARK" value="71C4165" x="22.5400875" y="53.03164375" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="1757284" x="22.5400875" y="53.03164375" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MF" value="FARNELL" x="22.5400875" y="53.03164375" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_FARNELL" value="3705213" x="22.5400875" y="53.03164375" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="X2" library="con-phoenix-508" package="MSTBA6" value="MSTBA6" x="22.063075" y="52.069996875" rot="R270">
+<attribute name="OC_NEWARK" value="71C4165" x="22.063075" y="52.069996875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="1757284" x="22.063075" y="52.069996875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="FARNELL" x="22.063075" y="52.069996875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="3705213" x="22.063075" y="52.069996875" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J5" library="SparkFun-Connectors" package="MOLEX-1X6" value="" x="91.669996875" y="95.2809875" rot="MR0"/>
 <element name="J4" library="SparkFun-Connectors" package="USB-B-MICRO-SMD_V03" value="USB-MICROB&quot;" x="137.25321875" y="80.0249875" rot="R180">
@@ -2351,11 +2351,11 @@ design rules under a new name.</description>
 </element>
 <element name="R23" library="SparkFun-Resistors" package="0805" value="" x="35.2988875" y="44.52111875"/>
 <element name="LED5" library="led" package="CHIPLED_0805" value="" x="41.500046875" y="44.521121875" rot="R90"/>
-<element name="X3" library="con-phoenix-508" package="MSTBA6" value="MSTBA6" x="23.3735875" y="88.72423125" rot="R270">
-<attribute name="OC_NEWARK" value="71C4165" x="23.3735875" y="88.72423125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="1757284" x="23.3735875" y="88.72423125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="FARNELL" x="23.3735875" y="88.72423125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="3705213" x="23.3735875" y="88.72423125" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="X3" library="con-phoenix-508" package="MSTBA6" value="MSTBA6" x="22.10155625" y="88.565228125" rot="R270">
+<attribute name="OC_NEWARK" value="71C4165" x="22.10155625" y="88.565228125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="1757284" x="22.10155625" y="88.565228125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="FARNELL" x="22.10155625" y="88.565228125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="3705213" x="22.10155625" y="88.565228125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$1" library="omron-G5NB-1A-E" package="OMRON-G5NB" value="OMRON-RELAY-G5NB" x="133.08635" y="61.057534375"/>
 </elements>
@@ -3134,17 +3134,17 @@ design rules under a new name.</description>
 <signal name="N$29">
 <contactref element="X2" pad="1"/>
 <contactref element="R19" pad="1"/>
-<wire x1="27.6200875" y1="40.33164375" x2="34.421875" y2="64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="27.143075" y1="64.769996875" x2="34.421875" y2="64.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
 <contactref element="X2" pad="2"/>
 <contactref element="R20" pad="1"/>
-<wire x1="27.6200875" y1="45.41164375" x2="34.351771875" y2="59.62345" width="0" layer="19" extent="1-1"/>
+<wire x1="27.143075" y1="59.689996875" x2="34.351771875" y2="59.62345" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$31">
 <contactref element="R21" pad="1"/>
 <contactref element="X2" pad="3"/>
-<wire x1="27.6200875" y1="50.49164375" x2="34.436225" y2="54.694328125" width="0" layer="19" extent="1-1"/>
+<wire x1="27.143075" y1="54.609996875" x2="34.436225" y2="54.694328125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$32">
 <contactref element="R19" pad="2"/>
@@ -3187,12 +3187,12 @@ design rules under a new name.</description>
 <wire x1="45.8852875" y1="56.919240625" x2="45.8852875" y2="59.459240625" width="0" layer="19" extent="1-1"/>
 <wire x1="45.8852875" y1="54.379240625" x2="45.8852875" y2="56.919240625" width="0" layer="19" extent="1-1"/>
 <wire x1="45.977234375" y1="45.786040625" x2="45.8852875" y2="54.379240625" width="0" layer="19" extent="1-1"/>
-<wire x1="27.6200875" y1="65.73164375" x2="45.977234375" y2="45.786040625" width="0" layer="19" extent="1-1"/>
+<wire x1="27.143075" y1="39.369996875" x2="45.977234375" y2="45.786040625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="X2" pad="4"/>
 <contactref element="R22" pad="1"/>
-<wire x1="27.6200875" y1="55.57164375" x2="34.3988875" y2="49.609246875" width="0" layer="19" extent="1-1"/>
+<wire x1="27.143075" y1="49.529996875" x2="34.3988875" y2="49.609246875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40">
 <contactref element="R22" pad="2"/>
@@ -3210,7 +3210,7 @@ design rules under a new name.</description>
 <signal name="N$45">
 <contactref element="X2" pad="5"/>
 <contactref element="R23" pad="1"/>
-<wire x1="27.6200875" y1="60.65164375" x2="34.3988875" y2="44.52111875" width="0" layer="19" extent="1-1"/>
+<wire x1="27.143075" y1="44.449996875" x2="34.3988875" y2="44.52111875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$46">
 <contactref element="R23" pad="2"/>
@@ -3221,6 +3221,9 @@ design rules under a new name.</description>
 <contactref element="LED5" pad="A"/>
 <contactref element="U5" pad="2"/>
 <wire x1="42.550046875" y1="44.521121875" x2="45.977234375" y2="44.516040625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$42">
+<wire x1="17.17243125" y1="67.417696875" x2="17.17243125" y2="77.116940625" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
